@@ -5,7 +5,7 @@ PATH = r"C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(executable_path=PATH)
 driver.get("https://orteil.dashnet.org/cookieclicker/")
 
-driver.implicitly_wait(5)
+driver.implicitly_wait(5) ################################### implicit vs explicit waits??????????????????????????
 
 cookies_count = driver.find_element_by_id("cookies")
 big_cookie = driver.find_element_by_id("bigCookie")
